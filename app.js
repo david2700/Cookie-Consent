@@ -15,12 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add click handlers to all nav links to close mobile menu when clicked
     const navLinksItems = document.querySelectorAll('.nav-links a');
     navLinksItems.forEach(link => {
-        link.addEventListener('click', () => {
-            if (window.innerWidth <= 768) {  // Only on mobile screens
-                navLinks.classList.remove('active');
-            }
-        });
-    });
+        link.addEventListener("click", () => {
+            link.classList.remove("active");
+        })
+   })
 
     // PAGE NAVIGATION SETUP
     // This function handles showing/hiding different sections of the page
